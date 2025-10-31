@@ -63,15 +63,13 @@
     @media(max-width:768px){ .iframe-wrap iframe{height:260px;} }
 
     /* Make all images and iframes non-clickable */
-img, iframe {
-  pointer-events: none !important;
-}
+    img, iframe { pointer-events: none !important; }
   </style>
 </head>
 <body>
 
-<!-- Top Testimonials Box (Now First) -->
-<div class="flex justify-center mt-4 mb-6"> <!-- spacing around box -->
+<!-- Top Testimonials Box -->
+<div class="flex justify-center mt-4 mb-6">
   <div class="bg-gray-800 bg-opacity-90 rounded-xl shadow-lg px-6 py-4 max-w-4xl w-full relative overflow-hidden h-16">
     <div class="testimonial absolute w-full text-center top-1/2 transform -translate-y-1/2 opacity-0 transition-opacity duration-1000">
       💬 Ahmet K., İstanbul: “Hızlı ödeme ve güvenilir destek sayesinde kazançlarım arttı!”
@@ -119,50 +117,50 @@ img, iframe {
   }, 5000);
 </script>
 
-<!-- Top Bar (Now Below Testimonial) -->
+<!-- Top Bar -->
 <div class="topbar text-sm mt-4">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 px-4 py-2">
     <div class="flex items-center gap-4 font-semibold">
       📢 <strong>Betpuan - Mobil Bahis ve Casino Oyunları</strong>
-      </div>
-      <div class="flex gap-4 text-xs">
-        <span>🔗 <a class="underline muted-link" href="https://sshortly5.com/9ca3b2b" target="_blank">Güvenli Güncel Giriş</a></span>
-        <span>🎁 <a class="underline muted-link" href="#bonuslar">Hoş Geldin Bonusu</a></span>
+    </div>
+    <div class="flex gap-4 text-xs">
+      <span>🔗 <a class="underline muted-link" href="https://sshortly5.com/9ca3b2b" target="_blank">Güvenli Güncel Giriş</a></span>
+      <span>🎁 <a class="underline muted-link" href="#bonuslar">Hoş Geldin Bonusu</a></span>
     </div>
   </div>
 </div>
 
-  <!-- Header / Top Menu -->
-  <header class="bg-[var(--topmenu)] sticky top-12 z-40 shadow-lg">
-    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-      <div class="text-2xl font-bold flex items-center gap-3">
-        🎰 <span>Lisanslı BetPuan Siteleri</span>
-      </div>
-      <nav class="hidden md:flex gap-6 font-semibold text-gray-100">
-        <a href="#hero" class="hover:text-emerald-300">Ana Sayfa</a>
-        <a href="#oyunlar" class="hover:text-emerald-300">Oyunlar</a>
-        <a href="#bonuslar" class="hover:text-emerald-300">Bonuslar</a>
-        <a href="#odeme" class="hover:text-emerald-300">Ödemeler</a>
-        <a href="#sss" class="hover:text-emerald-300">SSS</a>
-        <a href="#iletisim" class="hover:text-emerald-300">İletişim</a>
-      </nav>
-      <div class="md:hidden text-white">
-        <button id="mobile-menu-btn" class="text-lg">☰</button>
-      </div>
+<!-- Header / Top Menu -->
+<header class="bg-[var(--topmenu)] sticky top-12 z-40 shadow-lg">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <div class="text-2xl font-bold flex items-center gap-3">
+      🎰 <span>Lisanslı BetPuan Siteleri</span>
     </div>
-    <div id="mobile-menu" class="hidden bg-black/40 md:hidden px-6 py-4 space-y-2">
-      <a href="#hero" class="block">Ana Sayfa</a>
-      <a href="#oyunlar" class="block">Oyunlar</a>
-      <a href="#bonuslar" class="block">Bonuslar</a>
-      <a href="#odeme" class="block">Ödemeler</a>
-      <a href="#sss" class="block">SSS</a>
-      <a href="#iletisim" class="block">İletişim</a>
+    <nav class="hidden md:flex gap-6 font-semibold text-gray-100">
+      <a href="#hero" class="hover:text-emerald-300">Ana Sayfa</a>
+      <a href="#oyunlar" class="hover:text-emerald-300">Oyunlar</a>
+      <a href="#bonuslar" class="hover:text-emerald-300">Bonuslar</a>
+      <a href="#odeme" class="hover:text-emerald-300">Ödemeler</a>
+      <a href="#sss" class="hover:text-emerald-300">SSS</a>
+      <a href="#iletisim" class="hover:text-emerald-300">İletişim</a>
+    </nav>
+    <div class="md:hidden text-white">
+      <button id="mobile-menu-btn" class="text-lg">☰</button>
     </div>
-  </header>
+  </div>
+  <div id="mobile-menu" class="hidden bg-black/40 md:hidden px-6 py-4 space-y-2">
+    <a href="#hero" class="block">Ana Sayfa</a>
+    <a href="#oyunlar" class="block">Oyunlar</a>
+    <a href="#bonuslar" class="block">Bonuslar</a>
+    <a href="#odeme" class="block">Ödemeler</a>
+    <a href="#sss" class="block">SSS</a>
+    <a href="#iletisim" class="block">İletişim</a>
+  </div>
+</header>
 
-  <script>
-    document.getElementById('mobile-menu-btn')?.addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('hidden')});
-  </script>
+<script>
+  document.getElementById('mobile-menu-btn')?.addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('hidden')});
+</script>
 
 <!-- Marquee -->
 <section class="py-4 overflow-hidden bg-[#293043]">
@@ -173,7 +171,6 @@ img, iframe {
       <span>✅ %100 Hoş Geldin Bonusu 🎁</span>
       <span>✅ 7/24 Destek & Güvenli Altyapı</span>
       <span>✅ Lisanslı bahis siteleri</span>
-      <!-- Repeat content to make seamless -->
       <span>✅ Mobil uyumlu — <strong>mobil bahis giriş</strong></span>
       <span>✅ Hızlı ödeme — <strong>nakit bahis</strong></span>
       <span>✅ %100 Hoş Geldin Bonusu 🎁</span>
@@ -184,75 +181,65 @@ img, iframe {
 </section>
 
 <style>
-.marquee {
-  display: inline-flex;
-  animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+.marquee { display: inline-flex; animation: marquee 20s linear infinite; }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 </style>
 
-
-  <!-- Hero Section -->
-  <section id="hero" class="py-12">
-    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-      <!-- Left: Text -->
-      <div class="space-y-6">
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
-          🎯 BetPuan.co — Türkiye'nin Güvenilir <strong>bahis siteleri</strong>
-        </h1>
-        <p class="text-lg text-gray-200">
-          Canlı maçlar, <strong>bahis casino</strong>, slotlar ve yüksek oranlı seçeneklerle kazanç fırsatını yakalayın.
-          Hızlı ödeme ve güvenli deneyimle hemen katılın.
-        </p>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="green-outline p-3 bg-black/40 flex items-center gap-3">
-            💸 <div><div class="text-sm text-gray-300">Hızlı Para Çekme</div><div class="text-sm font-semibold text-emerald-300">Dakikalar İçinde</div></div>
-          </div>
-          <div class="green-outline p-3 bg-black/40 flex items-center gap-3">
-            🔒 <div><div class="text-sm text-gray-300">Güvenli Ödeme</div><div class="text-sm font-semibold text-emerald-300">SSL & KYC</div></div>
-          </div>
+<!-- Hero Section -->
+<section id="hero" class="py-12">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div class="space-y-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
+        🎯 BetPuan.co — Türkiye'nin Güvenilir <strong>bahis siteleri</strong>
+      </h1>
+      <p class="text-lg text-gray-200">
+        Canlı maçlar, <strong>bahis casino</strong>, slotlar ve yüksek oranlı seçeneklerle kazanç fırsatını yakalayın.
+        Hızlı ödeme ve güvenli deneyimle hemen katılın.
+      </p>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="green-outline p-3 bg-black/40 flex items-center gap-3">
+          💸 <div><div class="text-sm text-gray-300">Hızlı Para Çekme</div><div class="text-sm font-semibold text-emerald-300">Dakikalar İçinde</div></div>
         </div>
-        <div class="flex gap-4 mt-4">
-          <a href="https://sshortly5.com/9ca3b2b" class="btn-gold px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2 animate-bounce-slow">
-            🚀 Hemen Üye Ol & Bonus Al
-          </a>
-          <a href="#odeme" class="px-5 py-3 rounded-full bg-black/40 border border-white/10 font-semibold inline-flex items-center gap-2">
-            <i class="fa-solid fa-credit-card"></i> Hızlı Ödeme Seçenekleri
-          </a>
+        <div class="green-outline p-3 bg-black/40 flex items-center gap-3">
+          🔒 <div><div class="text-sm text-gray-300">Güvenli Ödeme</div><div class="text-sm font-semibold text-emerald-300">SSL & KYC</div></div>
         </div>
       </div>
-      <!-- Right: Images -->
-      <div class="space-y-4">
-        <div class="iframe-card">
-          <div class="iframe-wrap">
-            <iframe src="https://drive.google.com/file/d/1e2m1QNvqOLol3lIUb_gPKUGdJSaXTo2z/preview"></iframe>
-          </div>
+      <div class="flex gap-4 mt-4">
+        <a href="https://sshortly5.com/9ca3b2b" class="btn-gold px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2 animate-bounce-slow">
+          🚀 Hemen Üye Ol & Bonus Al
+        </a>
+        <a href="#odeme" class="px-5 py-3 rounded-full bg-black/40 border border-white/10 font-semibold inline-flex items-center gap-2">
+          <i class="fa-solid fa-credit-card"></i> Hızlı Ödeme Seçenekleri
+        </a>
+      </div>
+    </div>
+    <div class="space-y-4">
+      <div class="iframe-card">
+        <div class="iframe-wrap">
+          <iframe src="https://drive.google.com/file/d/1e2m1QNvqOLol3lIUb_gPKUGdJSaXTo2z/preview"></iframe>
         </div>
-        <div class="iframe-card">
-          <div class="iframe-wrap">
-            <iframe src="https://drive.google.com/file/d/1IaZ12W6f9D2YSXbMJ2B0fLYnDGot67LP/preview"></iframe>
-          </div>
+      </div>
+      <div class="iframe-card">
+        <div class="iframe-wrap">
+          <iframe src="https://drive.google.com/file/d/1IaZ12W6f9D2YSXbMJ2B0fLYnDGot67LP/preview"></iframe>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Popüler Oyunlar Section -->
-  <section id="oyunlar" class="py-8">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-6 text-emerald-400">🎮 Popüler Oyunlar</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="iframe-card"><div class="iframe-wrap"><iframe src="https://drive.google.com/file/d/1xTEKsmeKoDCJQK4n0eCLBqIDxk3D7hYK/preview"></iframe></div></div>
-        <div class="iframe-card"><div class="iframe-wrap"><iframe src="https://drive.google.com/file/d/1ackXOH-QNvBnFMlUlh9fkeQNu6OmFBz_/preview"></iframe></div></div>
-        <div class="iframe-card"><div class="iframe-wrap"><iframe src="https://drive.google.com/file/d/1CKVcQhyo2VfvIvo8fv3ZixUj73JjMv4u/preview"></iframe></div></div>
-        <div class="iframe-card"><div class="iframe-wrap"><iframe src="https://drive.google.com/file/d/1B_NeESXhYrUGQ50MTUVeE3LertWDBdbP/preview"></iframe></div></div>
-      </div>
+<!-- Popüler Oyunlar -->
+<section id="oyunlar" class="py-8">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-2xl font-bold mb-6 text-emerald-400">🎮 Popüler Oyunlar</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="iframe-card"><div class="iframe-wrap"><iframe src="https://drive.google.com/file/d/1xTEKsmeKoDCJQK4n0eCLBqIDxk3D7hYK/preview"></iframe></div></div>
+      <div class="iframe-card"><div class="iframe-wrap"><iframe src="https://drive.google.com/file/d/1ackXOH-QNvBnFMlUlh9fkeQNu6OmFBz_/preview"></iframe></div></div>
+      <div class="iframe-card"><div class="iframe-wrap"><iframe src="https://drive.google.com/file/d/1CKVcQhyo2VfvIvo8fv3ZixUj73JjMv4u/preview"></iframe></div></div>
+      <div class="iframe-card"><div class="iframe-wrap"><iframe src="https://drive.google.com/file/d/1B_NeESXhYrUGQ50MTUVeE3LertWDBdbP/preview"></iframe></div></div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- Bonuslar & Kampanyalar -->
 <section id="bonuslar" class="py-10 bg-[#343B4D] text-center">
