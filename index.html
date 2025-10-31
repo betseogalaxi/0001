@@ -61,6 +61,11 @@
     .floating-cta { position:fixed; bottom:20px; right:20px; z-index:60; }
 
     @media(max-width:768px){ .iframe-wrap iframe{height:260px;} }
+
+    /* Make all images and iframes non-clickable */
+img, iframe {
+  pointer-events: none !important;
+}
   </style>
 </head>
 <body>
