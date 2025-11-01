@@ -170,7 +170,7 @@
   </div>
 </section>
 
-<!-- Hero Section -->
+<!-- Hero Section - Domain 1 -->
 <section id="hero" class="py-12">
   <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
     
@@ -203,22 +203,21 @@
       </div>
     </div>
 
-    <!-- Right column: single larger full-height image -->
+    <!-- Right column: single larger full-height image (no overflow) -->
     <div class="fade-in">
-      <div class="iframe-card">
-        <div class="iframe-wrap h-[400px] md:h-[550px] overflow-hidden rounded-lg shadow-lg">
-          <img 
-            src="https://github.com/betseogalaxi/m/blob/main/00008-bonus-al-25.jpg?raw=true" 
-            alt="RIOS Apps Download" 
-            class="w-full h-full object-cover" 
-            loading="lazy"
-          />
-        </div>
+      <div class="h-[400px] md:h-[550px] relative">
+        <img 
+          src="https://github.com/betseogalaxi/m/blob/main/00008-bonus-al-25.jpg?raw=true" 
+          alt="Hero Image" 
+          class="w-full h-full object-contain" 
+          loading="lazy"
+        />
       </div>
     </div>
 
   </div>
 </section>
+
 
 <!-- Popular Oyunlar -->
 <section id="oyunlar" class="py-8">
